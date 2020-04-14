@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+      "isbn"
+  ],
+  "properties": {
+      "isbn": {
+          "$id": "#/properties/isbn",
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 14,
+          "title": "The Isbn Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "978-1612197494"
+          ]
+      },
+      "amazon_url": {
+          "$id": "#/properties/amazon_url",
+          "type": "string",
+          "format": "iri",
+          "title": "The Amazon_url Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "https://www.amazon.com/How-Do-Nothing-Resisting-Attention-ebook/dp/B07FLNFRGK/ref=sr_1_1?dchild=1&keywords=how+to+do+nothing&qid=1586904745&sr=8-1"
+          ]
+      },
+      "author": {
+          "$id": "#/properties/author",
+          "type": "string",
+          "title": "The Author Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Jenny Odell"
+          ]
+      },
+      "language": {
+          "$id": "#/properties/language",
+          "type": "string",
+          "title": "The Language Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "English"
+          ]
+      },
+      "pages": {
+          "$id": "#/properties/pages",
+          "type": "integer",
+          "title": "The Pages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+              256.0
+          ]
+      },
+      "publisher": {
+          "$id": "#/properties/publisher",
+          "type": "string",
+          "title": "The Publisher Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "Melville House"
+          ]
+      },
+      "title": {
+          "$id": "#/properties/title",
+          "type": "string",
+          "title": "The Title Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+              "How to Do Nothing: Resisting the Attention Economy "
+          ]
+      },
+      "year": {
+          "$id": "#/properties/year",
+          "type": "integer",
+          "title": "The Year Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+              2019.0
+          ]
+      }
+  }
+}
