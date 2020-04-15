@@ -62,6 +62,9 @@ class Book {
    * */
 
   static async create(data) {
+
+    console.log("\n\n\n THIS IS WHAT DATA LOOKS LIKE INSIDE CREATE METHOD", data)
+
     const result = await db.query(
       `INSERT INTO books (
             isbn,
